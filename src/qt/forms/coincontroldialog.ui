@@ -294,7 +294,7 @@
         </widget>
        </item>
        <item row="1" column="0">
-        <widget class="QLabel" name="labelCoinControlGAMngeText">
+        <widget class="QLabel" name="labelCoinControlChangeText">
          <property name="enabled">
           <bool>false</bool>
          </property>
@@ -305,12 +305,12 @@
           </font>
          </property>
          <property name="text">
-          <string>GAMnge:</string>
+          <string>change:</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLabel" name="labelCoinControlGAMnge">
+        <widget class="QLabel" name="labelCoinControlChange">
          <property name="enabled">
           <bool>false</bool>
          </property>

@@ -492,7 +492,7 @@
                 </widget>
                </item>
                <item row="1" column="0">
-                <widget class="QLabel" name="labelCoinControlGAMngeText">
+                <widget class="QLabel" name="labelCoinControlChangeText">
                  <property name="font">
                   <font>
                    <weight>75</weight>
@@ -505,7 +505,7 @@
                 </widget>
                </item>
                <item row="1" column="1">
-                <widget class="QLabel" name="labelCoinControlGAMnge">
+                <widget class="QLabel" name="labelCoinControlChange">
                  <property name="cursor">
                   <cursorShape>IBeamCursor</cursorShape>
                  </property>
@@ -542,17 +542,17 @@
            <number>5</number>
           </property>
           <item>
-           <widget class="QCheckBox" name="checkBoxCoinControlGAMnge">
+           <widget class="QCheckBox" name="checkBoxCoinControlChange">
             <property name="toolTip">
-             <string>If this is activated, but the GAMnge address is empty or invalid, GAMnge will be sent to a newly generated address.</string>
+             <string>If this is activated, but the change address is empty or invalid, change will be sent to a newly generated address.</string>
             </property>
             <property name="text">
-             <string>Custom GAMnge address</string>
+             <string>Custom change address</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QValidatedLineEdit" name="lineEditCoinControlGAMnge">
+           <widget class="QValidatedLineEdit" name="lineEditCoinControlChange">
             <property name="enabled">
              <bool>false</bool>
             </property>
@@ -565,7 +565,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="labelCoinControlGAMngeLabel">
+           <widget class="QLabel" name="labelCoinControlChangeLabel">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
               <horstretch>0</horstretch>
