@@ -158,16 +158,16 @@
         <translation>Otvori &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Chaucha address</source>
-        <translation>Pošalji novčiće na Chaucha adresu</translation>
+        <source>Send coins to a Gamba address</source>
+        <translation>Pošalji novčiće na Gamba adresu</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Proveri poruku...</translation>
     </message>
     <message>
-        <source>Chaucha</source>
-        <translation>Chaucha</translation>
+        <source>Gamba</source>
+        <translation>Gamba</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -412,8 +412,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Chauchera</source>
-        <translation>Chauchera</translation>
+        <source>Monedero</source>
+        <translation>Monedero</translation>
     </message>
     <message>
         <source>Information</source>

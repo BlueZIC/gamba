@@ -126,8 +126,8 @@
         <translation>Abrir &amp;URL...</translation>
     </message>
     <message>
-        <source>Send coins to a Chaucha address</source>
-        <translation>Enviando monedas a una dirección de Chaucha</translation>
+        <source>Send coins to a Gamba address</source>
+        <translation>Enviando monedas a una dirección de Gamba</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
@@ -146,8 +146,8 @@
         <translation>&amp;Verificar Mensaje...</translation>
     </message>
     <message>
-        <source>Chaucha</source>
-        <translation>Chaucha</translation>
+        <source>Gamba</source>
+        <translation>Gamba</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -290,8 +290,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Chauchera</source>
-        <translation>Chauchera</translation>
+        <source>Monedero</source>
+        <translation>Monedero</translation>
     </message>
     <message>
         <source>Insufficient funds</source>

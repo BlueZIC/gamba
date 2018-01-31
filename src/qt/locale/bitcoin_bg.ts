@@ -166,8 +166,8 @@
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a Chaucha address</source>
-        <translation>Изпращане към Chaucha адрес</translation>
+        <source>Send coins to a Gamba address</source>
+        <translation>Изпращане към Gamba адрес</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -191,7 +191,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Chaucha</translation>
+        <translation>Gamba</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -218,12 +218,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Chaucha addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Chaucha адрес за да докажете,че е ваш.</translation>
+        <source>Sign messages with your Gamba addresses to prove you own them</source>
+        <translation>Пишете съобщения със своя Gamba адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Chaucha addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Chaucha адреси.</translation>
+        <source>Verify messages to ensure they were signed with specified Gamba addresses</source>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Gamba адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -242,8 +242,8 @@
         <translation>Раздели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and chaucha: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и Chaucha: URIs)</translation>
+        <source>Request payments (generates QR codes and gamba: URIs)</source>
+        <translation>Изискване на плащания(генерира QR кодове и Gamba: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -254,16 +254,16 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a chaucha: URI or payment request</source>
-        <translation>Отворете Chaucha: URI  или заявка за плащане</translation>
+        <source>Open a gamba: URI or payment request</source>
+        <translation>Отворете Gamba: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Налични команди</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Chaucha network</source>
-        <translation><numerusform>%n активна връзка към Chaucha мрежата</numerusform><numerusform>%n активни връзки към Chaucha мрежата</numerusform></translation>
+        <source>%n active connection(s) to Gamba network</source>
+        <translation><numerusform>%n активна връзка към Gamba мрежата</numerusform><numerusform>%n активни връзки към Gamba мрежата</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -330,8 +330,8 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Chaucha command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Chaucha команди</translation>
+        <source>Show the %1 help message to get a list with possible Gamba command-line options</source>
+        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Gamba команди</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -681,16 +681,16 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Chaucha client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Chaucha порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the Gamba client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Gamba порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Chaucha network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Chaucha мрежата чрез SOCKS5  прокси.</translation>
+        <source>Connect to the Gamba network through a SOCKS5 proxy.</source>
+        <translation>Свързване с Gamba мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -784,8 +784,8 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Chaucha network after a connection is established, but this process has not completed yet.</source>
-        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Chaucha, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Gamba network after a connection is established, but this process has not completed yet.</source>
+        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Gamba, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -853,8 +853,8 @@
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Chaucha address (e.g. %1)</source>
-        <translation>Въведете Chaucha адрес (например: %1)</translation>
+        <source>Enter a Gamba address (e.g. %1)</source>
+        <translation>Въведете Gamba адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1367,7 +1367,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Chaucha address</source>
+        <source>Sign the message to prove you own this Gamba address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1383,8 +1383,8 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Chaucha address</source>
-        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Chaucha адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified Gamba address</source>
+        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Gamba адрес</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1434,7 +1434,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>chaucha-core</name>
+    <name>gamba-core</name>
     <message>
         <source>Options:</source>
         <translation>Опции:</translation>
@@ -1457,7 +1457,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Chaucha ядро</translation>
+        <translation>Gamba ядро</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>

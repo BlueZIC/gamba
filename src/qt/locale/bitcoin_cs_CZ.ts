@@ -86,8 +86,8 @@
         <translation>Změnit heslo k šifrování peněženky</translation>
     </message>
     <message>
-        <source>Chaucha</source>
-        <translation>Chaucha</translation>
+        <source>Gamba</source>
+        <translation>Gamba</translation>
     </message>
     <message>
         <source>&amp;File</source>

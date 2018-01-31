@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Chaucha"
-#define QAPP_ORG_DOMAIN "chaucha.cl"
-#define QAPP_APP_NAME_DEFAULT "Chauchera"
-#define QAPP_APP_NAME_TESTNET "Chauchera-testnet"
+#define QAPP_ORG_NAME "Gamba"
+#define QAPP_ORG_DOMAIN "gamba.cl"
+#define QAPP_APP_NAME_DEFAULT "Monedero"
+#define QAPP_APP_NAME_TESTNET "Monedero-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

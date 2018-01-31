@@ -142,8 +142,8 @@
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
-        <source>Send coins to a Chaucha address</source>
-        <translation>Enviar monedas a una dirección chaucha</translation>
+        <source>Send coins to a Gamba address</source>
+        <translation>Enviar monedas a una dirección gamba</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>Verificar mensaje....</translation>
     </message>
     <message>
-        <source>Chaucha</source>
-        <translation>Chaucha</translation>
+        <source>Gamba</source>
+        <translation>Gamba</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -186,7 +186,7 @@
         <translation>&amp;Mostrar/Ocultar</translation>
     </message>
     <message>
-        <source>Sign messages with your Chaucha addresses to prove you own them</source>
+        <source>Sign messages with your Gamba addresses to prove you own them</source>
         <translation>Firmar un mensaje para provar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -206,8 +206,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and chaucha: URIs)</source>
-        <translation>Pide pagos (genera codigos QR and chaucha: URls)</translation>
+        <source>Request payments (generates QR codes and gamba: URIs)</source>
+        <translation>Pide pagos (genera codigos QR and gamba: URls)</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -368,8 +368,8 @@
         <translation>experto</translation>
     </message>
     <message>
-        <source>Automatically open the Chaucha client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automáticamente el puerto del cliente Chaucha en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
+        <source>Automatically open the Gamba client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automáticamente el puerto del cliente Gamba en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -689,7 +689,7 @@
         <translation>Firma</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Chaucha address</source>
+        <source>Sign the message to prove you own this Gamba address</source>
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -774,8 +774,8 @@
 </translation>
     </message>
     <message>
-        <source>Chauchera</source>
-        <translation>Chauchera</translation>
+        <source>Monedero</source>
+        <translation>Monedero</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>

@@ -7,17 +7,17 @@ define(_CLIENT_VERSION_BUILD, 3)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
-define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Chauchera]])
-AC_INIT([Chauchera],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/proyecto-chaucha/chauchera/issues],[chaucha],[https://chaucha.cl/])
+define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Monedero]])
+AC_INIT([Monedero],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/proyecto-gamba/monedero/issues],[gamba],[https://gamba.cl/])
 AC_CONFIG_SRCDIR([src/main.cpp])
 AC_CONFIG_HEADERS([src/config/bitcoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
-BITCOIN_DAEMON_NAME=chauchad
-BITCOIN_GUI_NAME=chauchera
-BITCOIN_CLI_NAME=chaucha-cli
-BITCOIN_TX_NAME=chaucha-tx
+BITCOIN_DAEMON_NAME=gambad
+BITCOIN_GUI_NAME=monedero
+BITCOIN_CLI_NAME=gamba-cli
+BITCOIN_TX_NAME=gamba-tx
 
 AC_CANONICAL_HOST
 
@@ -229,7 +229,7 @@ CPPFLAGS="$CPPFLAGS -DHAVE_BUILD_INFO -D__STDC_FORMAT_MACROS"
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build chaucha-cli chaucha-tx (default=yes)])],
+  [build gamba-cli gamba-tx (default=yes)])],
   [build_bitcoin_utils=$withval],
   [build_bitcoin_utils=yes])
 
@@ -241,7 +241,7 @@ AC_ARG_WITH([libs],
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
-  [build chauchad daemon (default=yes)])],
+  [build gambad daemon (default=yes)])],
   [build_bitcoind=$withval],
   [build_bitcoind=yes])
 
@@ -894,11 +894,11 @@ AC_SUBST(UNIVALUE_LIBS)
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build chauchad])
+AC_MSG_CHECKING([whether to build gambad])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 
-AC_MSG_CHECKING([whether to build utils (chaucha-cli chaucha-tx)])
+AC_MSG_CHECKING([whether to build utils (gamba-cli gamba-tx)])
 AM_CONDITIONAL([BUILD_BITCOIN_UTILS], [test x$build_bitcoin_utils = xyes])
 AC_MSG_RESULT($build_bitcoin_utils)
 
@@ -999,7 +999,7 @@ if test x$bitcoin_enable_qt != xno; then
     AC_MSG_WARN("xgettext is required to update qt translations")
   fi
 
-  AC_MSG_CHECKING([whether to build test_chauchera])
+  AC_MSG_CHECKING([whether to build test_monedero])
   if test x$use_gui_tests$bitcoin_enable_qt_test = xyesyes; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"
@@ -1010,7 +1010,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "x$use_zmq" = "xyes"])
 
-AC_MSG_CHECKING([whether to build test_chaucha])
+AC_MSG_CHECKING([whether to build test_gamba])
 if test x$use_tests = xyes; then
   AC_MSG_RESULT([yes])
   BUILD_TEST="yes"

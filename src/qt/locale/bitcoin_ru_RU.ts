@@ -58,8 +58,8 @@
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <source>Chaucha</source>
-        <translation>Chauchera</translation>
+        <source>Gamba</source>
+        <translation>Monedero</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -218,8 +218,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Chauchera</source>
-        <translation>Chauchera</translation>
+        <source>Monedero</source>
+        <translation>Monedero</translation>
     </message>
     <message>
         <source>Whitelisted peers cannot be DoS banned and their transactions are always relayed, even if they are already in the mempool, useful e.g. for a gateway</source>

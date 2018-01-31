@@ -77,8 +77,8 @@ public:
         consensus.BIP34Height = 0;
         consensus.BIP34Hash = uint256S("6e27bffd2a104bea1c870be76aab1cce13bebb0db40606773827517da9528174"); //BIP 34 activo desde el principio
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 30 * 60; // Chaucha: 30 min
-        consensus.nPowTargetSpacing = 1 * 60; // Chaucha: 1 min
+        consensus.nPowTargetTimespan = 30 * 60; // Gamba: 30 min
+        consensus.nPowTargetSpacing = 1 * 60; // Gamba: 1 min
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 6048; // 75% of 8064
@@ -122,8 +122,8 @@ public:
         assert(genesis.hashMerkleRoot == uint256S("0x1b54ad13e84ece043533beb59d6b666047ffc77a4496034a101791601d711998"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
-        vSeeds.push_back(CDNSSeedData("condor420.chaucha.cl", "condor420.chaucha.cl")); // Por la razon
-        vSeeds.push_back(CDNSSeedData("huemul69.chaucha.cl", "huemul69.chaucha.cl")); // O la fuerza
+        vSeeds.push_back(CDNSSeedData("condor420.gamba.cl", "condor420.gamba.cl")); // Por la razon
+        vSeeds.push_back(CDNSSeedData("huemul69.gamba.cl", "huemul69.gamba.cl")); // O la fuerza
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,88);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
@@ -172,8 +172,8 @@ public:
         consensus.BIP34Height = 710000;
         consensus.BIP34Hash = uint256S("fa09d204a83a768ed5a7c8d441fa62f2043abf420cff1226c7b4329aeb9d51cf");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 30 * 60; // Chaucha: 30 min
-        consensus.nPowTargetSpacing = 1 * 60; // Chaucha: 1 min
+        consensus.nPowTargetTimespan = 30 * 60; // Gamba: 30 min
+        consensus.nPowTargetSpacing = 1 * 60; // Gamba: 1 min
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 6048; // 75% of 8064

@@ -65,11 +65,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += chauchad
+  bin_PROGRAMS += gambad
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += chaucha-cli chaucha-tx
+  bin_PROGRAMS += gamba-cli gamba-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -339,16 +339,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-chauchad_SOURCES = bitcoind.cpp
-chauchad_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-chauchad_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-chauchad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+gambad_SOURCES = bitcoind.cpp
+gambad_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+gambad_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+gambad_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-chauchad_SOURCES += bitcoind-res.rc
+gambad_SOURCES += bitcoind-res.rc
 endif
 
-chauchad_LDADD = \
+gambad_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -361,38 +361,38 @@ chauchad_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-chauchad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+gambad_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-chaucha_cli_SOURCES = bitcoin-cli.cpp
-chaucha_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-chaucha_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-chaucha_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+gamba_cli_SOURCES = bitcoin-cli.cpp
+gamba_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+gamba_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+gamba_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-chaucha_cli_SOURCES += bitcoin-cli-res.rc
+gamba_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-chaucha_cli_LDADD = \
+gamba_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-chaucha_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+gamba_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-chaucha_tx_SOURCES = bitcoin-tx.cpp
-chaucha_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-chaucha_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-chaucha_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+gamba_tx_SOURCES = bitcoin-tx.cpp
+gamba_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+gamba_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+gamba_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-chaucha_tx_SOURCES += bitcoin-tx-res.rc
+gamba_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-chaucha_tx_LDADD = \
+gamba_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -400,7 +400,7 @@ chaucha_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-chaucha_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+gamba_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

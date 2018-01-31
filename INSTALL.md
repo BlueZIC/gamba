@@ -1,5 +1,5 @@
-Building Chaucha
+Building Gamba
 ================
 
 See doc/build-*.md for instructions on building the various
-elements of the Chauchera reference implementation of Chaucha.
+elements of the Monedero reference implementation of Gamba.

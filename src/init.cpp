@@ -185,7 +185,7 @@ void Shutdown()
     /// for example if the data directory was found to be locked.
     /// Be sure that anything that writes files or flushes caches only does this if the respective
     /// module was initialized.
-    RenameThread("chaucha-shutoff");
+    RenameThread("gamba-shutoff");
     mempool.AddTransactionsUpdated(1);
 
     StopHTTPRPC();
@@ -481,12 +481,12 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/proyecto-chaucha/chauchera>";
-    const std::string URL_WEBSITE = "<https://chaucha.cl>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/proyecto-gamba/monedero>";
+    const std::string URL_WEBSITE = "<https://gamba.cl>";
     // todo: remove urls from translations on next change
     return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2017, COPYRIGHT_YEAR) + " ") + "\n" +
            "\n" +
-           _("Por la razón o la chaucha!") + "\n\n" +
+           _("Por la razón o la gamba!") + "\n\n" +
            strprintf(_("Please contribute if you find %s useful. "
                        "Visit %s for further information about the software."),
                PACKAGE_NAME, URL_WEBSITE) +
@@ -587,7 +587,7 @@ void CleanupBlockRevFiles()
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
     const CChainParams& chainparams = Params();
-    RenameThread("chaucha-loadblk");
+    RenameThread("gamba-loadblk");
     CImportingNow imp;
 
     // -reindex
@@ -775,7 +775,7 @@ void InitLogging()
     fLogIPs = GetBoolArg("-logips", DEFAULT_LOGIPS);
 
     LogPrintf("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
-    LogPrintf("Chaucha version %s\n", FormatFullVersion());
+    LogPrintf("Gamba version %s\n", FormatFullVersion());
 }
 
 /** Initialize bitcoin.

@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Chaucha address</source>
-        <translation>Trimite monedele către o adresă Chaucha</translation>
+        <source>Send coins to a Gamba address</source>
+        <translation>Trimite monedele către o adresă Gamba</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Chaucha</source>
-        <translation>Chaucha</translation>
+        <source>Gamba</source>
+        <translation>Gamba</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Chaucha addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Chaucha pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your Gamba addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de Gamba pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Chaucha addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Chaucha specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified Gamba addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Gamba specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and chaucha: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și chaucha: URIs)</translation>
+        <source>Request payments (generates QR codes and gamba: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și gamba: URIs)</translation>
     </message>
     <message>
-        <source>Open a chaucha: URI or payment request</source>
-        <translation>Deschide un chaucha: URI sau cerere de plată</translation>
+        <source>Open a gamba: URI or payment request</source>
+        <translation>Deschide un gamba: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -746,8 +746,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Chauchera</source>
-        <translation>Chauchera</translation>
+        <source>Monedero</source>
+        <translation>Monedero</translation>
     </message>
     <message>
         <source>Information</source>

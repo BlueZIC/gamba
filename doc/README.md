@@ -1,39 +1,39 @@
-Chauchera 2.0.0
+Monedero 2.0.0
 =====================
 
 Setup
 ---------------------
-[Chauchera](http://chaucha.cl) is the original Chaucha client and it builds the backbone of the network. However, it downloads and stores the entire history of Chaucha transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+[Monedero](http://gamba.cl) is the original Gamba client and it builds the backbone of the network. However, it downloads and stores the entire history of Gamba transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Chaucha on your native platform.
+The following are some helpful notes on how to run Gamba on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/chauchera` (GUI) or
-- `bin/chauchad` (headless)
+- `bin/monedero` (GUI) or
+- `bin/gambad` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run chauchera.exe.
+Unpack the files into a directory, and then run monedero.exe.
 
 ### OS X
 
-Drag Chauchera to your applications folder, and then run Chauchera.
+Drag Monedero to your applications folder, and then run Monedero.
 
 ### Need Help?
 
-* See the documentation at the [Chaucha Wiki](https://chaucha.cl/)
+* See the documentation at the [Gamba Wiki](https://gamba.cl/)
 for help and more information.
-* Ask for help on [chaucha telegram](https://t.me/chaucha) on Telegram.
+* Ask for help on [gamba telegram](https://t.me/gamba) on Telegram.
 
 
 Building
 ---------------------
-The following are developer notes on how to build Chaucha on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Gamba on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -43,7 +43,7 @@ The following are developer notes on how to build Chaucha on your native platfor
 
 Development
 ---------------------
-The Chaucha repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Gamba repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -60,7 +60,7 @@ The Chaucha repo's [root README](/README.md) contains relevant information on th
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss project-specific development on [chaucha telegram](https://t.me/chaucha) on Telegram. 
+* Discuss project-specific development on [gamba telegram](https://t.me/gamba) on Telegram. 
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>Chauchera</string>
+  <string>Monedero</string>
   
   <key>CFBundleName</key>
-  <string>Chauchera</string>
+  <string>Monedero</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.chaucha.Chauchera</string>
+  <string>org.gamba.Monedero</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.chaucha.ChauchaPayment</string>
+      <string>org.gamba.GambaPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>chaucha</string>
+        <string>gamba</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.chaucha.paymentrequest</string>
+      <string>org.gamba.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>Chaucha payment request</string>
+      <string>Gamba payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-chaucha-payment-request</string>
+        <string>application/x-gamba-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>chauchapaymentrequest</string>
+          <string>gambapaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.chaucha.paymentrequest</string>
+        <string>org.gamba.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

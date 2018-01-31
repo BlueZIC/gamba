@@ -76,9 +76,9 @@ for arg in sys.argv[1:]:
 
 #Set env vars
 if "CHAUCHAD" not in os.environ:
-    os.environ["CHAUCHAD"] = BUILDDIR + '/src/chauchad' + EXEEXT
+    os.environ["CHAUCHAD"] = BUILDDIR + '/src/gambad' + EXEEXT
 if "CHAUCHACLI" not in os.environ:
-    os.environ["CHAUCHACLI"] = BUILDDIR + '/src/chaucha-cli' + EXEEXT
+    os.environ["CHAUCHACLI"] = BUILDDIR + '/src/gamba-cli' + EXEEXT
 
 if EXEEXT == ".exe" and "-win" not in opts:
     # https://github.com/bitcoin/bitcoin/commit/d52802551752140cf41f0d9a225a43e84404d3e9

@@ -56,10 +56,10 @@ static int AppInitRawTx(int argc, char* argv[])
     if (argc<2 || mapArgs.count("-?") || mapArgs.count("-h") || mapArgs.count("-help"))
     {
         // First part of help message is specific to this utility
-        std::string strUsage = strprintf(_("%s chaucha-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = strprintf(_("%s gamba-tx utility version"), _(PACKAGE_NAME)) + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  chaucha-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded chaucha transaction") + "\n" +
-              "  chaucha-tx [options] -create [commands]   " + _("Create hex-encoded chaucha transaction") + "\n" +
+              "  gamba-tx [options] <hex-tx> [commands]  " + _("Update hex-encoded gamba transaction") + "\n" +
+              "  gamba-tx [options] -create [commands]   " + _("Create hex-encoded gamba transaction") + "\n" +
               "\n";
 
         fprintf(stdout, "%s", strUsage.c_str());

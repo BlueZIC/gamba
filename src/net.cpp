@@ -1409,7 +1409,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Chaucha " + FormatFullVersion();
+        std::string strDesc = "Gamba " + FormatFullVersion();
 
         try {
             while (true) {

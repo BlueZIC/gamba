@@ -166,8 +166,8 @@
         <translation>Réindexer les blocs sur le disque...</translation>
     </message>
     <message>
-        <source>Send coins to a Chaucha address</source>
-        <translation>Envoyer des pièces à une adresse Chaucha</translation>
+        <source>Send coins to a Gamba address</source>
+        <translation>Envoyer des pièces à une adresse Gamba</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -190,8 +190,8 @@
         <translation>&amp;Vérification du message</translation>
     </message>
     <message>
-        <source>Chaucha</source>
-        <translation>Chaucha</translation>
+        <source>Gamba</source>
+        <translation>Gamba</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -218,8 +218,8 @@
         <translation>Crypter les clé privées qui appartiennent votre portefeuille</translation>
     </message>
     <message>
-        <source>Sign messages with your Chaucha addresses to prove you own them</source>
-        <translation>Signer vos messages avec vos adresses Chaucha pour prouver que vous les détenez</translation>
+        <source>Sign messages with your Gamba addresses to prove you own them</source>
+        <translation>Signer vos messages avec vos adresses Gamba pour prouver que vous les détenez</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -238,24 +238,24 @@
         <translation>Barre d'outils des onglets</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and chaucha: URIs)</source>
-        <translation>Demander des paiements (générer QR codes et chaucha: URIs)</translation>
+        <source>Request payments (generates QR codes and gamba: URIs)</source>
+        <translation>Demander des paiements (générer QR codes et gamba: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
         <translation>Montrer la liste des adresses d'envois utilisées et les étiquettes</translation>
     </message>
     <message>
-        <source>Open a chaucha: URI or payment request</source>
-        <translation>Ouvrir un chaucha: URI ou demande de paiement</translation>
+        <source>Open a gamba: URI or payment request</source>
+        <translation>Ouvrir un gamba: URI ou demande de paiement</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Options de ligne de commande</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Chaucha network</source>
-        <translation><numerusform>%n connexion active au réseau Chaucha</numerusform><numerusform>%n connexions actives au réseau Chaucha</numerusform></translation>
+        <source>%n active connection(s) to Gamba network</source>
+        <translation><numerusform>%n connexion active au réseau Gamba</numerusform><numerusform>%n connexions actives au réseau Gamba</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -617,8 +617,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically open the Chaucha client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir le port du client Chaucha automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
+        <source>Automatically open the Gamba client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir le port du client Gamba automatiquement sur le routeur. Cela ne fonctionne que si votre routeur supporte l'UPnP et si la fonctionnalité est activée.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -781,8 +781,8 @@
         <translation>Montant</translation>
     </message>
     <message>
-        <source>Enter a Chaucha address (e.g. %1)</source>
-        <translation>Entrer une adresse Chaucha (e.g. %1)</translation>
+        <source>Enter a Gamba address (e.g. %1)</source>
+        <translation>Entrer une adresse Gamba (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1380,8 +1380,8 @@
         <translation>Impossible de démarrer le serveur HTTP. Voir le journal de débogage pour plus de détails.</translation>
     </message>
     <message>
-        <source>Chauchera</source>
-        <translation>Chauchera</translation>
+        <source>Monedero</source>
+        <translation>Monedero</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>

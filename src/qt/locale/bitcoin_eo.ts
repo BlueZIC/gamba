@@ -146,8 +146,8 @@
         <translation>Reindeksado de blokoj sur disko...</translation>
     </message>
     <message>
-        <source>Send coins to a Chaucha address</source>
-        <translation>Sendi monon al Chaucha-adreso</translation>
+        <source>Send coins to a Gamba address</source>
+        <translation>Sendi monon al Gamba-adreso</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -170,8 +170,8 @@
         <translation>&amp;Kontroli mesaĝon...</translation>
     </message>
     <message>
-        <source>Chaucha</source>
-        <translation>Chaucha</translation>
+        <source>Gamba</source>
+        <translation>Gamba</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -198,12 +198,12 @@
         <translation>Ĉifri la privatajn ŝlosilojn de via monujo</translation>
     </message>
     <message>
-        <source>Sign messages with your Chaucha addresses to prove you own them</source>
-        <translation>Subskribi mesaĝojn per via Chaucha-adresoj por pravigi, ke vi estas la posedanto</translation>
+        <source>Sign messages with your Gamba addresses to prove you own them</source>
+        <translation>Subskribi mesaĝojn per via Gamba-adresoj por pravigi, ke vi estas la posedanto</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Chaucha addresses</source>
-        <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Chaucha-adresoj</translation>
+        <source>Verify messages to ensure they were signed with specified Gamba addresses</source>
+        <translation>Kontroli mesaĝojn por kontroli ĉu ili estas subskribitaj per specifaj Gamba-adresoj</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -222,8 +222,8 @@
         <translation>Langeto-breto</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and chaucha: URIs)</source>
-        <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso chaucha:)</translation>
+        <source>Request payments (generates QR codes and gamba: URIs)</source>
+        <translation>Peti pagon (kreas QR-kodojn kaj URI-ojn kun prefikso gamba:)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -234,8 +234,8 @@
         <translation>Vidigi la liston de uzitaj ricevaj adresoj kaj etikedoj</translation>
     </message>
     <message>
-        <source>Open a chaucha: URI or payment request</source>
-        <translation>Malfermi chaucha:-URI-on aŭ pagpeton</translation>
+        <source>Open a gamba: URI or payment request</source>
+        <translation>Malfermi gamba:-URI-on aŭ pagpeton</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -577,8 +577,8 @@
         <translation>Fakulo</translation>
     </message>
     <message>
-        <source>Automatically open the Chaucha client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aŭtomate malfermi la kursilan pordon por Chaucha. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
+        <source>Automatically open the Gamba client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aŭtomate malfermi la kursilan pordon por Gamba. Tio funkcias nur se via kursilo havas la UPnP-funkcion, kaj se tiu ĉi estas ŝaltita.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -634,7 +634,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Elekti la defaŭltan manieron por montri chaucha sumojn en la interfaco, kaj kiam vi sendos chaucha.</translation>
+        <translation>Elekti la defaŭltan manieron por montri gamba sumojn en la interfaco, kaj kiam vi sendos gamba.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -672,8 +672,8 @@
         <translation>Formularo</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Chaucha network after a connection is established, but this process has not completed yet.</source>
-        <translation>Eblas, ke la informoj videblaj ĉi tie estas eksdataj. Via monujo aŭtomate sinkoniĝas kun la chaucha reto kiam ili konektiĝas, sed tiu procezo ankoraŭ ne finfariĝis.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Gamba network after a connection is established, but this process has not completed yet.</source>
+        <translation>Eblas, ke la informoj videblaj ĉi tie estas eksdataj. Via monujo aŭtomate sinkoniĝas kun la gamba reto kiam ili konektiĝas, sed tiu procezo ankoraŭ ne finfariĝis.</translation>
     </message>
     <message>
         <source>Your current spendable balance</source>
@@ -956,7 +956,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Sendi Chaucha</translation>
+        <translation>Sendi Gamba</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1139,8 +1139,8 @@
         <translation>Kopii la aktualan subskribon al la tondejo</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Chaucha address</source>
-        <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Chaucha-adreso</translation>
+        <source>Sign the message to prove you own this Gamba address</source>
+        <translation>Subskribi la mesaĝon por pravigi, ke vi estas la posedanto de tiu Gamba-adreso</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1159,8 +1159,8 @@
         <translation>&amp;Kontroli Mesaĝon</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Chaucha address</source>
-        <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Chaucha-adreso</translation>
+        <source>Verify the message to ensure it was signed with the specified Gamba address</source>
+        <translation>Kontroli la mesaĝon por pravigi, ke ĝi ja estas subskribita per la specifa Gamba-adreso</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1244,8 +1244,8 @@
         <translation>Akcepti konektojn el ekstere (defaŭlte: 1 se ne estas -proxy nek -connect)</translation>
     </message>
     <message>
-        <source>Chauchera</source>
-        <translation>Kerno de Chaucha</translation>
+        <source>Monedero</source>
+        <translation>Kerno de Gamba</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

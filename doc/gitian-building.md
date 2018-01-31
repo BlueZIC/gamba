@@ -1,9 +1,9 @@
 Gitian building
 ================
 
-*Setup instructions for a Gitian build of Chauchera using a Debian VM or physical system.*
+*Setup instructions for a Gitian build of Monedero using a Debian VM or physical system.*
 
-Gitian is the deterministic build process that is used to build the Chaucha
+Gitian is the deterministic build process that is used to build the Gamba
 Core executables. It provides a way to be reasonably sure that the
 executables are really built from the source on GitHub. It also makes sure that
 the same, tested dependencies are used and statically built into the executable.
@@ -11,7 +11,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to chaucha.org.
+to gamba.org.
 
 More independent Gitian builders are needed, which is why this guide exists.
 It is preferred you follow these steps yourself instead of using someone else's
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing Gitian](#installing-gitian)
 - [Setting up the Gitian image](#setting-up-the-gitian-image)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Chauchera](#building-chaucha-core)
+- [Building Monedero](#building-gamba-core)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -305,12 +305,12 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user *debian* not for *root*.
 
-Clone the git repositories for chaucha and Gitian.
+Clone the git repositories for gamba and Gitian.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
-git clone https://github.com/proyecto-chaucha/chauchera
-git clone https://github.com/chaucha-project/gitian.sigs.ltc.git
+git clone https://github.com/proyecto-gamba/monedero
+git clone https://github.com/gamba-project/gitian.sigs.ltc.git
 ```
 
 Setting up the Gitian image
@@ -337,16 +337,16 @@ Getting and building the inputs
 --------------------------------
 
 Follow the instructions in [doc/release-process.md](release-process.md#fetch-and-build-inputs-first-time-or-when-dependency-versions-change)
-in the chaucha repository under 'Fetch and create inputs' to install sources which require
+in the gamba repository under 'Fetch and create inputs' to install sources which require
 manual intervention. Also optionally follow the next step: 'Seed the Gitian sources cache
 and offline git repositories' which will fetch the remaining files required for building
 offline.
 
-Building Chauchera
+Building Monedero
 ----------------
 
-To build Chauchera (for Linux, OS X and Windows) just follow the steps under 'perform
-Gitian builds' in [doc/release-process.md](release-process.md#perform-gitian-builds) in the chaucha repository.
+To build Monedero (for Linux, OS X and Windows) just follow the steps under 'perform
+Gitian builds' in [doc/release-process.md](release-process.md#perform-gitian-builds) in the gamba repository.
 
 This may take some time as it will build all the dependencies needed for each descriptor.
 These dependencies will be cached after a successful build to avoid rebuilding them when possible.
@@ -360,12 +360,12 @@ tail -f var/build.log
 
 Output from `gbuild` will look something like
 
-    Initialized empty Git repository in /home/debian/gitian-builder/inputs/chaucha/.git/
+    Initialized empty Git repository in /home/debian/gitian-builder/inputs/gamba/.git/
     remote: Counting objects: 57959, done.
     remote: Total 57959 (delta 0), reused 0 (delta 0), pack-reused 57958
     Receiving objects: 100% (57959/57959), 53.76 MiB | 484.00 KiB/s, done.
     Resolving deltas: 100% (41590/41590), done.
-    From https://github.com/proyecto-chaucha/chauchera
+    From https://github.com/proyecto-gamba/monedero
     ... (new tags, new branch etc)
     --- Building for trusty amd64 ---
     Stopping target if it is up
@@ -391,18 +391,18 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/thrasher-/chaucha.git
+URL=https://github.com/thrasher-/gamba.git
 COMMIT=2014_03_windows_unicode_path
-./bin/gbuild --commit chaucha=${COMMIT} --url chaucha=${URL} ../chaucha/contrib/gitian-descriptors/gitian-linux.yml
-./bin/gbuild --commit chaucha=${COMMIT} --url chaucha=${URL} ../chaucha/contrib/gitian-descriptors/gitian-win.yml
-./bin/gbuild --commit chaucha=${COMMIT} --url chaucha=${URL} ../chaucha/contrib/gitian-descriptors/gitian-osx.yml
+./bin/gbuild --commit gamba=${COMMIT} --url gamba=${URL} ../gamba/contrib/gitian-descriptors/gitian-linux.yml
+./bin/gbuild --commit gamba=${COMMIT} --url gamba=${URL} ../gamba/contrib/gitian-descriptors/gitian-win.yml
+./bin/gbuild --commit gamba=${COMMIT} --url gamba=${URL} ../gamba/contrib/gitian-descriptors/gitian-osx.yml
 ```
 
 Building fully offline
 -----------------------
 
 For building fully offline including attaching signatures to unsigned builds, the detached-sigs repository
-and the chaucha git repository with the desired tag must both be available locally, and then gbuild must be
+and the gamba git repository with the desired tag must both be available locally, and then gbuild must be
 told where to find them. It also requires an apt-cacher-ng which is fully-populated but set to offline mode, or
 manually disabling gitian-builder's use of apt-get to update the VM build environment.
 
@@ -421,7 +421,7 @@ cd /path/to/gitian-builder
 LXC_ARCH=amd64 LXC_SUITE=trusty on-target -u root apt-get update
 LXC_ARCH=amd64 LXC_SUITE=trusty on-target -u root \
   -e DEBIAN_FRONTEND=noninteractive apt-get --no-install-recommends -y install \
-  $( sed -ne '/^packages:/,/[^-] .*/ {/^- .*/{s/"//g;s/- //;p}}' ../chaucha/contrib/gitian-descriptors/*|sort|uniq )
+  $( sed -ne '/^packages:/,/[^-] .*/ {/^- .*/{s/"//g;s/- //;p}}' ../gamba/contrib/gitian-descriptors/*|sort|uniq )
 LXC_ARCH=amd64 LXC_SUITE=trusty on-target -u root apt-get -q -y purge grub
 LXC_ARCH=amd64 LXC_SUITE=trusty on-target -u root -e DEBIAN_FRONTEND=noninteractive apt-get -y dist-upgrade
 ```
@@ -441,12 +441,12 @@ Then when building, override the remote URLs that gbuild would otherwise pull fr
 ```bash
 
 cd /some/root/path/
-git clone https://github.com/proyecto-chaucha/chauchera-detached-sigs.git
+git clone https://github.com/proyecto-gamba/monedero-detached-sigs.git
 
-BTCPATH=/some/root/path/chaucha
-SIGPATH=/some/root/path/chaucha-detached-sigs
+BTCPATH=/some/root/path/gamba
+SIGPATH=/some/root/path/gamba-detached-sigs
 
-./bin/gbuild --url chaucha=${BTCPATH},signature=${SIGPATH} ../chaucha/contrib/gitian-descriptors/gitian-win-signer.yml
+./bin/gbuild --url gamba=${BTCPATH},signature=${SIGPATH} ../gamba/contrib/gitian-descriptors/gitian-win-signer.yml
 ```
 
 Signing externally
@@ -461,9 +461,9 @@ When you execute `gsign` you will get an error from GPG, which can be ignored. C
 in `gitian.sigs.ltc` to your signing machine and do
 
 ```bash
-    gpg --detach-sign ${VERSION}-linux/${SIGNER}/chaucha-linux-build.assert
-    gpg --detach-sign ${VERSION}-win/${SIGNER}/chaucha-win-build.assert
-    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/chaucha-osx-build.assert
+    gpg --detach-sign ${VERSION}-linux/${SIGNER}/gamba-linux-build.assert
+    gpg --detach-sign ${VERSION}-win/${SIGNER}/gamba-win-build.assert
+    gpg --detach-sign ${VERSION}-osx-unsigned/${SIGNER}/gamba-osx-build.assert
 ```
 
 This will create the `.sig` files that can be committed together with the `.assert` files to assert your
@@ -473,5 +473,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[gitian.sigs.ltc](https://github.com/chaucha-project/gitian.sigs.ltc/) repository, or if that's not possible create a pull
+[gitian.sigs.ltc](https://github.com/gamba-project/gitian.sigs.ltc/) repository, or if that's not possible create a pull
 request. You can also mail the files to thrasher (thrasher@addictionsoftware.com) and he will commit them.

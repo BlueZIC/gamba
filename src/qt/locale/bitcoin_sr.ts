@@ -114,8 +114,8 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Chaucha address</source>
-        <translation>Пошаљите новац на chaucha адресу</translation>
+        <source>Send coins to a Gamba address</source>
+        <translation>Пошаљите новац на gamba адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>
