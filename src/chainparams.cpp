@@ -212,14 +212,14 @@ public:
 
         genesis = CreateGenesisBlock(1514919398, 304091, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xf05dd21580e2d3461acdde05449187262fae70e4d20ae330817806e85b5da3cb"));
+        assert(consensus.hashGenesisBlock == uint256S("0xaaa63088975ccce567a17b8348a5ed975a27ccbaf28997a94c06e2ce875aa433"));
         assert(genesis.hashMerkleRoot == uint256S("0x7796ecf3748309c46d74deddd79d9a837852342bcda35a9db185491f4d4676a2"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
-        vSeeds.push_back(CDNSSeedData("fn1.cha.harc.cl", "fn1.cha.harc.cl"));
-        vSeeds.push_back(CDNSSeedData("fn2.cha.harc.cl", "fn2.cha.harc.cl"));
+        vSeeds.push_back(CDNSSeedData("173.212.199.211", "173.212.199.211"));
+        //vSeeds.push_back(CDNSSeedData("fn2.cha.harc.cl", "fn2.cha.harc.cl"));
 
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,65);
