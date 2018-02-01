@@ -75,7 +75,7 @@ public:
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("00000bd5c0f4dae311e815239e7346cfd0b6c936a7a48139e5b314e190d9e067"); //BIP 34 activo desde el principio
+        consensus.BIP34Hash = uint256S("f05dd21580e2d3461acdde05449187262fae70e4d20ae330817806e85b5da3cb"); //BIP 34 activo desde el principio
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 30 * 60; // Gamba: 30 min
         consensus.nPowTargetSpacing = 1 * 60; // Gamba: 1 min
@@ -118,7 +118,7 @@ public:
         genesis = CreateGenesisBlock(1517440476, 94547, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x00000bd5c0f4dae311e815239e7346cfd0b6c936a7a48139e5b314e190d9e067"));
+        assert(consensus.hashGenesisBlock == uint256S("0xf05dd21580e2d3461acdde05449187262fae70e4d20ae330817806e85b5da3cb"));
         assert(genesis.hashMerkleRoot == uint256S("0x7796ecf3748309c46d74deddd79d9a837852342bcda35a9db185491f4d4676a2"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
@@ -142,16 +142,16 @@ public:
 
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-      (  0, uint256S("0x00000bd5c0f4dae311e815239e7346cfd0b6c936a7a48139e5b314e190d9e067")) //GENESIS
-      (  1, uint256S("0xeadcbcb3f8960778b1c39415d1447a5cb45981ac15b269e31924f5f4701ea0e8")) //PREMINE
-      ( 2833, uint256S("0xe281b0a49fd63613fd9ceffc758cd2044f72278cc9606fc7c7f86422d977e44f")) //POOL
-      ( 50000, uint256S("0x1f676ba037561706283a5cdac53d20c4d81576faffb4940ea3f0ddaa3a91f04b")) //BLOCK 50.000
-      ( 80000, uint256S("0x36813083a53ef7dc73037a92b245fbdced69f091bb8549da520331f159fdbf6b")) //BLOCK 80.000
-      ( 144875, uint256S("0xbb0eb7a10ba79bfa10a15e59c3cca0963087a349a2063266b2dc91997ef9d192")), //BLOCK 144.875 PRE-RELEASE CHAUCHERA2.0
-			1509752962, // * UNIX timestamp of last checkpoint block
-			91072,   // * total number of transactions between genesis and last checkpoint
+      (  0, uint256S("0xf05dd21580e2d3461acdde05449187262fae70e4d20ae330817806e85b5da3cb")) //GENESIS
+      //(  1, uint256S("0xeadcbcb3f8960778b1c39415d1447a5cb45981ac15b269e31924f5f4701ea0e8")) //PREMINE
+      //( 2833, uint256S("0xe281b0a49fd63613fd9ceffc758cd2044f72278cc9606fc7c7f86422d977e44f")) //POOL
+      //( 50000, uint256S("0x1f676ba037561706283a5cdac53d20c4d81576faffb4940ea3f0ddaa3a91f04b")) //BLOCK 50.000
+      //( 80000, uint256S("0x36813083a53ef7dc73037a92b245fbdced69f091bb8549da520331f159fdbf6b")) //BLOCK 80.000
+      //( 144875, uint256S("0xbb0eb7a10ba79bfa10a15e59c3cca0963087a349a2063266b2dc91997ef9d192")), //BLOCK 144.875 PRE-RELEASE CHAUCHERA2.0
+			//1509752962, // * UNIX timestamp of last checkpoint block
+			//91072,   // * total number of transactions between genesis and last checkpoint
 			//   (the tx=... number in the SetBestChain debug.log lines)
-			1440.0     // * estimated number of transactions per day after checkpoint
+			//1440.0     // * estimated number of transactions per day after checkpoint
 	};
 
     }
