@@ -50,8 +50,8 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "this is Gamba";
-    const CScript genesisOutputScript = CScript() << ParseHex("123484710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+    const char* pszTimestamp = "emol, 31/01/2018: Aduana de Valparaíso detecta 23 kilos de cocaína en contenedor con destino a Europa";
+    const CScript genesisOutputScript = CScript() << ParseHex("04678afdb0fe5548271967f1a67130b7105cd6a828e03909a67962e0ea1f61deb649f6bc3f4cef38c4f35504e51ec112de5c384df7ba0b8d578a4c702b6bf11d5f") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -75,7 +75,7 @@ public:
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.BIP34Height = 0;
-        consensus.BIP34Hash = uint256S("6e27bffd2a104bea1c870be76aab1cce13bebb0db40606773827517da9528174"); //BIP 34 activo desde el principio
+        consensus.BIP34Hash = uint256S("00000bd5c0f4dae311e815239e7346cfd0b6c936a7a48139e5b314e190d9e067"); //BIP 34 activo desde el principio
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 30 * 60; // Gamba: 30 min
         consensus.nPowTargetSpacing = 1 * 60; // Gamba: 1 min
@@ -115,11 +115,11 @@ public:
         nDefaultPort = 37333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1517417895, 1, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1517440476, 94547, 0x1e0ffff0, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
 
-        assert(consensus.hashGenesisBlock == uint256S("0x6e27bffd2a104bea1c870be76aab1cce13bebb0db40606773827517da9528174"));
-        assert(genesis.hashMerkleRoot == uint256S("0x1b54ad13e84ece043533beb59d6b666047ffc77a4496034a101791601d711998"));
+        assert(consensus.hashGenesisBlock == uint256S("0x00000bd5c0f4dae311e815239e7346cfd0b6c936a7a48139e5b314e190d9e067"));
+        assert(genesis.hashMerkleRoot == uint256S("0x7796ecf3748309c46d74deddd79d9a837852342bcda35a9db185491f4d4676a2"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vSeeds.push_back(CDNSSeedData("condor420.gamba.cl", "condor420.gamba.cl")); // Por la razon
@@ -142,7 +142,7 @@ public:
 
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-      (  0, uint256S("0x6e27bffd2a104bea1c870be76aab1cce13bebb0db40606773827517da9528174")) //GENESIS
+      (  0, uint256S("0x00000bd5c0f4dae311e815239e7346cfd0b6c936a7a48139e5b314e190d9e067")) //GENESIS
       (  1, uint256S("0xeadcbcb3f8960778b1c39415d1447a5cb45981ac15b269e31924f5f4701ea0e8")) //PREMINE
       ( 2833, uint256S("0xe281b0a49fd63613fd9ceffc758cd2044f72278cc9606fc7c7f86422d977e44f")) //POOL
       ( 50000, uint256S("0x1f676ba037561706283a5cdac53d20c4d81576faffb4940ea3f0ddaa3a91f04b")) //BLOCK 50.000
